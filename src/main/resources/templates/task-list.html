@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akıllı Görev Yöneticisi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #4361ee;
+      --secondary: #3f37c9;
+      --success: #06d6a0;
+      --danger: #ef476f;
+      --light: #f8f9fa;
+      --dark: #212529;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+      min-height: 100vh;
+      padding-top: 80px;
+    }
+
+    .app-header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+      padding: 1.5rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      padding: 2rem;
+      padding-top: 140px;
+      padding-right: 320px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* HAVA DURUMU STİLLERİ */
+    .weather-card {
+      position: fixed;
+      top: 90px;
+      right: 20px;
+      width: 280px;
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 950;
+      margin-bottom: 20px;
+    }
+
+    .weather-content {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .weather-icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    .temperature {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .description {
+      text-transform: capitalize;
+      color: #666;
+      margin: 0.5rem 0;
+    }
+
+    .additional-info p {
+      margin: 0.3rem 0;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    /* TAKVİM ALANI */
+    .calendar-container {
+      background: white;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+    }
+
+    .calendar-day {
+      border: 1px solid #e0e0e0;
+      min-height: 100px;
+      padding: 0.5rem;
+      background: white;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .calendar-day.current-day {
+      background: rgba(67, 97, 238, 0.05);
+      border: 2px solid var(--primary);
+    }
+
+    .day-number {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .calendar-task {
+      font-size: 0.8rem;
+      padding: 2px 5px;
+      margin: 2px 0;
+      background: rgba(67, 97, 238, 0.1);
+      border-radius: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .calendar-task.important {
+      background: rgba(239, 71, 111, 0.1);
+      border-left: 3px solid var(--danger);
+    }
+
+    /* GÖREV LİSTELERİ */
+    .task-board {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .task-column {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .task-item {
+      padding: 1rem;
+      margin: 1rem 0;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .task-item.important {
+      border-left: 4px solid var(--danger);
+    }
+
+    .task-item.completed {
+      opacity: 0.7;
+      background: rgba(6, 214, 160, 0.05);
+    }
+
+    /* FORM ALANI */
+    .floating-form {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 400px;
+      z-index: 900;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    /* BUTONLAR */
+    .btn {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--secondary);
+      transform: translateY(-2px);
+    }
+
+    .btn-danger {
+      background: var(--danger);
+      color: white;
+    }
+
+    /* RESPONSIVE TASARIM */
+    @media (max-width: 1200px) {
+      .container {
+        padding-right: 2rem;
+      }
+      .weather-card {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        margin: 1rem 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+        padding-top: 100px;
+      }
+      .floating-form {
+        position: static;
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="app-header">
+  <h1><i class="fas fa-tasks"></i> Akıllı Görev Yöneticisi</h1>
+</header>
+
+<div class="weather-card" th:if="${weather}">
+  <div class="weather-header">
+    <h3>
+      <i class="fas fa-map-marker-alt"></i>
+      <span th:text="${weather.name}"></span>
+    </h3>
+  </div>
+  <div class="weather-content">
+    <img th:if="${not #lists.isEmpty(weather.weather)}"
+         th:src="'https://openweathermap.org/img/wn/' + ${weather.weather[0].icon} + '@2x.png'"
+         alt="Hava Durumu İkonu"
+         class="weather-icon">
+    <div class="weather-details">
+      <div class="temperature">
+        <span th:text="${#numbers.formatDecimal(weather.main.temp, 1, 1)}"></span>°C
+      </div>
+      <div class="description" th:text="${weather.weather[0].description}"></div>
+      <div class="additional-info">
+        <p>
+          <i class="fas fa-temperature-low"></i>
+          Hissedilen: <span th:text="${#numbers.formatDecimal(weather.main.feels_like, 1, 1)}"></span>°C
+        </p>
+        <p>
+          <i class="fas fa-tint"></i>
+          Nem: <span th:text="${weather.main.humidity}"></span>%
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <h2>
+        <i class="fas fa-calendar-alt"></i>
+        <span th:text="${#temporals.format(currentYearMonth.atDay(1), 'MMMM yyyy', new java.util.Locale('tr','TR'))}"></span>
+      </h2>
+      <div>
+        <a th:href="@{/tasks(month=${prevMonth})}" class="btn btn-primary">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <a th:href="@{/tasks(month=${nextMonth})}" class="btn btn-primary">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="calendar-grid">
+      <div class="calendar-day text-center"
+           th:each="day : ${weekDays}"
+           th:text="${day}"></div>
+
+      <div class="calendar-day"
+           th:each="i : ${#numbers.sequence(1, firstDayOfMonth-1)}"></div>
+
+      <div class="calendar-day"
+           th:each="day : ${#numbers.sequence(1, daysInMonth)}"
+           th:classappend="${currentYearMonth.atDay(day).isEqual(T(java.time.LocalDate).now())} ? 'current-day'">
+        <div class="day-number" th:text="${day}"></div>
+        <div th:each="task : ${calendarTasks?.get(day)}"
+             class="calendar-task"
+             th:classappend="${task.important == 1} ? 'important'">
+          <span th:text="${task.description}"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="task-board">
+    <div class="task-column">
+      <h2><i class="fas fa-clipboard-list"></i> Aktif Görevler</h2>
+      <div th:each="task : ${activeTasks}"
+           class="task-item"
+           th:classappend="${task.important == 1} ? 'important'">
+        <h3 th:text="${task.description}"></h3>
+        <p class="due-date">
+          <i class="far fa-calendar-alt"></i>
+          <span th:text="${#temporals.format(task.dueDate, 'dd.MM.yyyy')}"></span>
+        </p>
+        <form th:action="@{/tasks/toggle/{id}(id=${task.id})}" method="post">
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-check-circle"></i> Tamamla
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="task-column">
+      <h2><i class="fas fa-check-double"></i> Tamamlananlar</h2>
+      <div th:each="task : ${completedTasks}"
+           class="task-item completed">
+        <h3 th:text="${task.description}"></h3>
+        <p class="due-date">
+          <i class="far fa-calendar-alt"></i>
+          <span th:text="${#temporals.format(task.dueDate, 'dd.MM.yyyy')}"></span>
+        </p>
+        <form th:action="@{/tasks/toggle/{id}(id=${task.id})}" method="post">
+          <button type="submit" class="btn btn-danger">
+            <i class="fas fa-undo"></i> Geri Al
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="floating-form">
+  <h2><i class="fas fa-plus-circle"></i> Yeni Görev Ekle</h2>
+  <form th:action="@{/tasks/new}" th:object="${task}" method="post">
+    <input type="text" class="form-input"
+           placeholder="Görev açıklaması"
+           th:field="*{description}" required>
+
+    <input type="date" class="form-input"
+           th:field="*{dueDate}" required>
+
+    <select class="form-input" th:field="*{important}">
+      <option value="0">Normal Görev</option>
+      <option value="1">Önemli Görev</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary">
+      <i class="fas fa-save"></i> Kaydet
+    </button>
+  </form>
+</div>
+</body>
+</html>

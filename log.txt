@@ -1,0 +1,1111 @@
+2025-05-16T16:45:22.419+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : Starting TaskManagerLastApplication using Java 23.0.2 with PID 53846 (/Users/ahmetyusufbursal/Desktop/TaskManager Proje/target/classes started by ahmetyusufbursal in /Users/ahmetyusufbursal/Desktop/TaskManager Proje)
+2025-05-16T16:45:22.423+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T16:45:22.449+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-16T16:45:22.449+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-16T16:45:22.685+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T16:45:22.710+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2025-05-16T16:45:22.932+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-16T16:45:22.939+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T16:45:22.940+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T16:45:22.957+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T16:45:22.958+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 509 ms
+2025-05-16T16:45:23.026+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T16:45:23.053+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T16:45:23.067+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T16:45:23.184+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T16:45:23.195+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-16T16:45:23.379+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/mydatabase user=SA
+2025-05-16T16:45:23.379+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-16T16:45:23.396+03:00  WARN 53846 --- [taskManagerLast] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-16T16:45:23.405+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T16:45:23.699+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T16:45:23.717+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T16:45:23.880+03:00  WARN 53846 --- [taskManagerLast] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T16:45:23.915+03:00 DEBUG 53846 --- [taskManagerLast] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2025-05-16T16:45:23.953+03:00 DEBUG 53846 --- [taskManagerLast] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-16T16:45:23.966+03:00 DEBUG 53846 --- [taskManagerLast] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-16T16:45:23.985+03:00 DEBUG 53846 --- [taskManagerLast] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-16T16:45:23.995+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/mydatabase'
+2025-05-16T16:45:24.020+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-16T16:45:24.035+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-16T16:45:24.041+03:00  INFO 53846 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : Started TaskManagerLastApplication in 1.788 seconds (process running for 1.976)
+2025-05-16T16:45:30.293+03:00  INFO 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T16:45:30.294+03:00  INFO 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T16:45:30.294+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-16T16:45:30.294+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-16T16:45:30.294+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-16T16:45:30.297+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@18a8df47
+2025-05-16T16:45:30.297+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@50b1ac94
+2025-05-16T16:45:30.298+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-16T16:45:30.301+03:00  INFO 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2025-05-16T16:45:30.308+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/tasks?month=2025-06", parameters={masked}
+2025-05-16T16:45:30.313+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:45:30.462+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:45:30.488+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:45:30.857+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:45:30.858+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:45:30.873+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:45:30.877+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2025-05-16T16:45:30.922+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine.CONFIG      : Initializing Thymeleaf Template engine configuration...
+[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Thymeleaf version: 3.1.3.RELEASE (built 2024-12-08T21:30:43+0000)
+[THYMELEAF] * Cache Manager implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template resolvers:
+[THYMELEAF]     * org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers:
+[THYMELEAF]     * org.thymeleaf.spring6.messageresolver.SpringMessageResolver
+[THYMELEAF] * Link builders:
+[THYMELEAF]     * org.thymeleaf.linkbuilder.StandardLinkBuilder
+[THYMELEAF] * Dialect: SpringStandard (org.thymeleaf.spring6.dialect.SpringStandardDialect)
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF]     * Processors for Template Mode: HTML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include,data-th-include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert,data-th-insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace,data-th-replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each,data-th-each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch,data-th-switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case,data-th-case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if,data-th-if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless,data-th-unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object,data-th-object}] [500]: org.thymeleaf.spring6.processor.SpringObjectTagProcessor
+[THYMELEAF]             * [* {th:with,data-th-with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr,data-th-attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend,data-th-attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend,data-th-attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:method,data-th-method}] [990]: org.thymeleaf.spring6.processor.SpringMethodTagProcessor
+[THYMELEAF]             * [* {th:alt-title,data-th-alt-title}] [990]: org.thymeleaf.standard.processor.StandardAltTitleTagProcessor
+[THYMELEAF]             * [* {th:lang-xmllang,data-th-lang-xmllang}] [990]: org.thymeleaf.standard.processor.StandardLangXmlLangTagProcessor
+[THYMELEAF]             * [* {th:action,data-th-action}] [1000]: org.thymeleaf.spring6.processor.SpringActionTagProcessor
+[THYMELEAF]             * [* {th:href,data-th-href}] [1000]: org.thymeleaf.spring6.processor.SpringHrefTagProcessor
+[THYMELEAF]             * [* {th:src,data-th-src}] [1000]: org.thymeleaf.spring6.processor.SpringSrcTagProcessor
+[THYMELEAF]             * [* {th:controls,data-th-controls}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:scoped,data-th-scoped}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:seamless,data-th-seamless}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:disabled,data-th-disabled}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:async,data-th-async}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:checked,data-th-checked}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:defer,data-th-defer}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:declare,data-th-declare}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:multiple,data-th-multiple}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:ismap,data-th-ismap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:loop,data-th-loop}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:formnovalidate,data-th-formnovalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autofocus,data-th-autofocus}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:required,data-th-required}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:hidden,data-th-hidden}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:pubdate,data-th-pubdate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:novalidate,data-th-novalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:readonly,data-th-readonly}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:selected,data-th-selected}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:default,data-th-default}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:nowrap,data-th-nowrap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autoplay,data-th-autoplay}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:reversed,data-th-reversed}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:open,data-th-open}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:onreset,data-th-onreset}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeyup,data-th-onkeyup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstalled,data-th-onstalled}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplay,data-th-onplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragleave,data-th-ondragleave}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onprogress,data-th-onprogress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onafterprint,data-th-onafterprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragstart,data-th-ondragstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onvolumechange,data-th-onvolumechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragenter,data-th-ondragenter}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousewheel,data-th-onmousewheel}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreadystatechange,data-th-onreadystatechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onscroll,data-th-onscroll}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondblclick,data-th-ondblclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ononline,data-th-ononline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninput,data-th-oninput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onemptied,data-th-onemptied}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstorage,data-th-onstorage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onchange,data-th-onchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrop,data-th-ondrop}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmessage,data-th-onmessage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncontextmenu,data-th-oncontextmenu}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadeddata,data-th-onloadeddata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninvalid,data-th-oninvalid}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onshow,data-th-onshow}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseup,data-th-onmouseup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onwaiting,data-th-onwaiting}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragover,data-th-ondragover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onredo,data-th-onredo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onabort,data-th-onabort}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseover,data-th-onmouseover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeking,data-th-onseeking}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseout,data-th-onmouseout}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onundo,data-th-onundo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsubmit,data-th-onsubmit}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousedown,data-th-onmousedown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onformchange,data-th-onformchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadstart,data-th-onloadstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeprint,data-th-onbeforeprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onselect,data-th-onselect}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onended,data-th-onended}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplaying,data-th-onplaying}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondurationchange,data-th-ondurationchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadedmetadata,data-th-onloadedmetadata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onfocus,data-th-onfocus}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onhashchange,data-th-onhashchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onerror,data-th-onerror}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onblur,data-th-onblur}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeydown,data-th-onkeydown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplaythrough,data-th-oncanplaythrough}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrag,data-th-ondrag}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpause,data-th-onpause}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeypress,data-th-onkeypress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onoffline,data-th-onoffline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onratechange,data-th-onratechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onunload,data-th-onunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeked,data-th-onseeked}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onresize,data-th-onresize}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplay,data-th-oncanplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsuspend,data-th-onsuspend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpopstate,data-th-onpopstate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeunload,data-th-onbeforeunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onload,data-th-onload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousemove,data-th-onmousemove}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragend,data-th-ondragend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onforminput,data-th-onforminput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onclick,data-th-onclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ontimeupdate,data-th-ontimeupdate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:inline,data-th-inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineHTMLTagProcessor
+[THYMELEAF]             * [* {th:name,data-th-name}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:type,data-th-type}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formaction,data-th-formaction}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formtarget,data-th-formtarget}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:draggable,data-th-draggable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contextmenu,data-th-contextmenu}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:standby,data-th-standby}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:content,data-th-content}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:data,data-th-data}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:low,data-th-low}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frameborder,data-th-frameborder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:lang,data-th-lang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dropzone,data-th-dropzone}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:kind,data-th-kind}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:span,data-th-span}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:wrap,data-th-wrap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:autocomplete,data-th-autocomplete}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rowspan,data-th-rowspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:keytype,data-th-keytype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept-charset,data-th-accept-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:height,data-th-height}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:maxlength,data-th-maxlength}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:usemap,data-th-usemap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:min,data-th-min}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:preload,data-th-preload}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:border,data-th-border}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cols,data-th-cols}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:form,data-th-form}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:headers,data-th-headers}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:axis,data-th-axis}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:tabindex,data-th-tabindex}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginwidth,data-th-marginwidth}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rel,data-th-rel}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:width,data-th-width}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:max,data-th-max}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:summary,data-th-summary}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:label,data-th-label}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellspacing,data-th-cellspacing}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sandbox,data-th-sandbox}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:start,data-th-start}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scope,data-th-scope}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:compact,data-th-compact}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formmethod,data-th-formmethod}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rows,data-th-rows}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:alt,data-th-alt}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:class,data-th-class}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formenctype,data-th-formenctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginheight,data-th-marginheight}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept,data-th-accept}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:target,data-th-target}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:icon,data-th-icon}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:size,data-th-size}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frame,data-th-frame}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:charset,data-th-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:colspan,data-th-colspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codebase,data-th-codebase}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:step,data-th-step}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:valuetype,data-th-valuetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scrolling,data-th-scrolling}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:title,data-th-title}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:for,data-th-for}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:pattern,data-th-pattern}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellpadding,data-th-cellpadding}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cite,data-th-cite}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:placeholder,data-th-placeholder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:archive,data-th-archive}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:enctype,data-th-enctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:id,data-th-id}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:optimum,data-th-optimum}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:audio,data-th-audio}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codetype,data-th-codetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rev,data-th-rev}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:radiogroup,data-th-radiogroup}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:align,data-th-align}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:style,data-th-style}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:longdesc,data-th-longdesc}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:spellcheck,data-th-spellcheck}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rules,data-th-rules}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:abbr,data-th-abbr}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:http-equiv,data-th-http-equiv}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:background,data-th-background}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:bgcolor,data-th-bgcolor}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:high,data-th-high}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:list,data-th-list}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scheme,data-th-scheme}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accesskey,data-th-accesskey}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:media,data-th-media}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:classid,data-th-classid}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:challenge,data-th-challenge}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hspace,data-th-hspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:poster,data-th-poster}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:manifest,data-th-manifest}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:datetime,data-th-datetime}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dir,data-th-dir}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hreflang,data-th-hreflang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contenteditable,data-th-contenteditable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sizes,data-th-sizes}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:vspace,data-th-vspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:srclang,data-th-srclang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:xmlbase,data-th-xmlbase}] [1000]: org.thymeleaf.standard.processor.StandardXmlBaseTagProcessor
+[THYMELEAF]             * [* {th:xmllang,data-th-xmllang}] [1000]: org.thymeleaf.standard.processor.StandardXmlLangTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:xmlspace,data-th-xmlspace}] [1000]: org.thymeleaf.standard.processor.StandardXmlSpaceTagProcessor
+[THYMELEAF]             * [{option} *] [1005]: org.thymeleaf.spring6.processor.SpringOptionInSelectFieldTagProcessor
+[THYMELEAF]             * [* {th:value,data-th-value}] [1010]: org.thymeleaf.spring6.processor.SpringValueTagProcessor
+[THYMELEAF]             * [* {th:classappend,data-th-classappend}] [1100]: org.thymeleaf.standard.processor.StandardClassappendTagProcessor
+[THYMELEAF]             * [* {th:styleappend,data-th-styleappend}] [1100]: org.thymeleaf.standard.processor.StandardStyleappendTagProcessor
+[THYMELEAF]             * [* {th:text,data-th-text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext,data-th-utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment,data-th-fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert,data-th-assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove,data-th-remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:errors,data-th-errors}] [1700]: org.thymeleaf.spring6.processor.SpringErrorsTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputCheckboxFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputFileFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputGeneralFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputPasswordFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputRadioFieldTagProcessor
+[THYMELEAF]             * [{option} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringOptionFieldTagProcessor
+[THYMELEAF]             * [{select} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringSelectFieldTagProcessor
+[THYMELEAF]             * [{textarea} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringTextareaFieldTagProcessor
+[THYMELEAF]             * [* {th:uerrors,data-th-uerrors}] [1700]: org.thymeleaf.spring6.processor.SpringUErrorsTagProcessor
+[THYMELEAF]             * [* {th:errorclass,data-th-errorclass}] [1800]: org.thymeleaf.spring6.processor.SpringErrorClassTagProcessor
+[THYMELEAF]             * [* {th:ref,data-th-ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block,th-block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * DOCTYPE Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardTranslationDocTypeProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]             * [1100]: org.thymeleaf.standard.processor.StandardConditionalCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: XML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineXMLTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: TEXT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: JAVASCRIPT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: CSS
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Expression Objects:
+[THYMELEAF]         * #ctx
+[THYMELEAF]         * #root
+[THYMELEAF]         * #vars
+[THYMELEAF]         * #object
+[THYMELEAF]         * #locale
+[THYMELEAF]         * #conversions
+[THYMELEAF]         * #uris
+[THYMELEAF]         * #temporals
+[THYMELEAF]         * #calendars
+[THYMELEAF]         * #dates
+[THYMELEAF]         * #bools
+[THYMELEAF]         * #numbers
+[THYMELEAF]         * #objects
+[THYMELEAF]         * #strings
+[THYMELEAF]         * #arrays
+[THYMELEAF]         * #lists
+[THYMELEAF]         * #sets
+[THYMELEAF]         * #maps
+[THYMELEAF]         * #aggregates
+[THYMELEAF]         * #messages
+[THYMELEAF]         * #ids
+[THYMELEAF]         * #execInfo
+[THYMELEAF]         * #request
+[THYMELEAF]         * #response
+[THYMELEAF]         * #session
+[THYMELEAF]         * #servletContext
+[THYMELEAF]         * #fields
+[THYMELEAF]         * #themes
+[THYMELEAF]         * #mvc
+[THYMELEAF]         * #requestdatavalues
+[THYMELEAF]     * Execution Attributes:
+[THYMELEAF]         * "StandardExpressionParser": Standard Expression Parser
+[THYMELEAF]         * "StandardJavaScriptSerializer": org.thymeleaf.standard.serializer.StandardJavaScriptSerializer@5d7f4bed
+[THYMELEAF]         * "StandardCSSSerializer": org.thymeleaf.standard.serializer.StandardCSSSerializer@2ec3d78e
+[THYMELEAF]         * "EnableSpringELCompiler": false
+[THYMELEAF]         * "StandardVariableExpressionEvaluator": SpringEL
+[THYMELEAF]         * "StandardConversionService": org.thymeleaf.spring6.expression.SpringStandardConversionService@3a7ab54d
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2025-05-16T16:45:30.976+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2025-05-16T16:45:31.083+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:45:38.218+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/tasks?month=2025-05", parameters={masked}
+2025-05-16T16:45:38.221+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:45:38.257+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:45:38.262+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:45:38.417+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:45:38.424+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:45:38.428+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:45:38.453+03:00 DEBUG 53846 --- [taskManagerLast] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:46:01.836+03:00  INFO 53846 --- [taskManagerLast] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T16:46:01.853+03:00  INFO 53846 --- [taskManagerLast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T16:46:01.862+03:00  INFO 53846 --- [taskManagerLast] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T16:46:01.872+03:00  INFO 53846 --- [taskManagerLast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-16T16:46:09.733+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : Starting TaskManagerLastApplication using Java 23.0.2 with PID 53894 (/Users/ahmetyusufbursal/Desktop/TaskManager Proje/target/classes started by ahmetyusufbursal in /Users/ahmetyusufbursal/Desktop/TaskManager Proje)
+2025-05-16T16:46:09.734+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T16:46:09.756+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-16T16:46:09.756+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-16T16:46:10.014+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T16:46:10.042+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2025-05-16T16:46:10.269+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-16T16:46:10.277+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T16:46:10.277+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T16:46:10.310+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T16:46:10.310+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 553 ms
+2025-05-16T16:46:10.401+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T16:46:10.427+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T16:46:10.443+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T16:46:10.569+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T16:46:10.580+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-16T16:46:10.777+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/mydatabase user=SA
+2025-05-16T16:46:10.778+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-16T16:46:10.790+03:00  WARN 53894 --- [taskManagerLast] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-16T16:46:10.798+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T16:46:11.107+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T16:46:11.117+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T16:46:11.340+03:00  WARN 53894 --- [taskManagerLast] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T16:46:11.374+03:00 DEBUG 53894 --- [taskManagerLast] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2025-05-16T16:46:11.416+03:00 DEBUG 53894 --- [taskManagerLast] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-16T16:46:11.431+03:00 DEBUG 53894 --- [taskManagerLast] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-16T16:46:11.456+03:00 DEBUG 53894 --- [taskManagerLast] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-16T16:46:11.469+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/mydatabase'
+2025-05-16T16:46:11.496+03:00  WARN 53894 --- [taskManagerLast] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-16T16:46:11.510+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-16T16:46:11.515+03:00  INFO 53894 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : Started TaskManagerLastApplication in 1.953 seconds (process running for 2.118)
+2025-05-16T16:46:18.638+03:00  INFO 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T16:46:18.638+03:00  INFO 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T16:46:18.639+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-16T16:46:18.639+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-16T16:46:18.639+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-16T16:46:18.646+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7dc5c88a
+2025-05-16T16:46:18.647+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@376235ad
+2025-05-16T16:46:18.648+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-16T16:46:18.648+03:00  INFO 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2025-05-16T16:46:18.657+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/tasks?month=2025-05", parameters={masked}
+2025-05-16T16:46:18.662+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:46:18.768+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:46:18.790+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:46:19.687+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:46:19.690+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:46:19.725+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:46:19.731+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2025-05-16T16:46:19.785+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine.CONFIG      : Initializing Thymeleaf Template engine configuration...
+[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Thymeleaf version: 3.1.3.RELEASE (built 2024-12-08T21:30:43+0000)
+[THYMELEAF] * Cache Manager implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template resolvers:
+[THYMELEAF]     * org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers:
+[THYMELEAF]     * org.thymeleaf.spring6.messageresolver.SpringMessageResolver
+[THYMELEAF] * Link builders:
+[THYMELEAF]     * org.thymeleaf.linkbuilder.StandardLinkBuilder
+[THYMELEAF] * Dialect: SpringStandard (org.thymeleaf.spring6.dialect.SpringStandardDialect)
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF]     * Processors for Template Mode: HTML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include,data-th-include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert,data-th-insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace,data-th-replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each,data-th-each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch,data-th-switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case,data-th-case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if,data-th-if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless,data-th-unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object,data-th-object}] [500]: org.thymeleaf.spring6.processor.SpringObjectTagProcessor
+[THYMELEAF]             * [* {th:with,data-th-with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr,data-th-attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend,data-th-attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend,data-th-attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:method,data-th-method}] [990]: org.thymeleaf.spring6.processor.SpringMethodTagProcessor
+[THYMELEAF]             * [* {th:alt-title,data-th-alt-title}] [990]: org.thymeleaf.standard.processor.StandardAltTitleTagProcessor
+[THYMELEAF]             * [* {th:lang-xmllang,data-th-lang-xmllang}] [990]: org.thymeleaf.standard.processor.StandardLangXmlLangTagProcessor
+[THYMELEAF]             * [* {th:action,data-th-action}] [1000]: org.thymeleaf.spring6.processor.SpringActionTagProcessor
+[THYMELEAF]             * [* {th:href,data-th-href}] [1000]: org.thymeleaf.spring6.processor.SpringHrefTagProcessor
+[THYMELEAF]             * [* {th:src,data-th-src}] [1000]: org.thymeleaf.spring6.processor.SpringSrcTagProcessor
+[THYMELEAF]             * [* {th:selected,data-th-selected}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:loop,data-th-loop}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:controls,data-th-controls}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:seamless,data-th-seamless}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:required,data-th-required}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:multiple,data-th-multiple}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:default,data-th-default}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:pubdate,data-th-pubdate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:ismap,data-th-ismap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autofocus,data-th-autofocus}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:scoped,data-th-scoped}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:declare,data-th-declare}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:readonly,data-th-readonly}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:hidden,data-th-hidden}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:async,data-th-async}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autoplay,data-th-autoplay}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:open,data-th-open}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:nowrap,data-th-nowrap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:disabled,data-th-disabled}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:reversed,data-th-reversed}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:novalidate,data-th-novalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:checked,data-th-checked}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:formnovalidate,data-th-formnovalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:defer,data-th-defer}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:ondragleave,data-th-ondragleave}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onafterprint,data-th-onafterprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onformchange,data-th-onformchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousedown,data-th-onmousedown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseup,data-th-onmouseup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragenter,data-th-ondragenter}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragover,data-th-ondragover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragstart,data-th-ondragstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeking,data-th-onseeking}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onredo,data-th-onredo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninput,data-th-oninput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onundo,data-th-onundo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreadystatechange,data-th-onreadystatechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onerror,data-th-onerror}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreset,data-th-onreset}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeunload,data-th-onbeforeunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onwaiting,data-th-onwaiting}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeyup,data-th-onkeyup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpopstate,data-th-onpopstate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondblclick,data-th-ondblclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onabort,data-th-onabort}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsuspend,data-th-onsuspend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ontimeupdate,data-th-ontimeupdate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onscroll,data-th-onscroll}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onforminput,data-th-onforminput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeydown,data-th-onkeydown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplaying,data-th-onplaying}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmessage,data-th-onmessage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onfocus,data-th-onfocus}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsubmit,data-th-onsubmit}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrop,data-th-ondrop}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplay,data-th-onplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseout,data-th-onmouseout}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onresize,data-th-onresize}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninvalid,data-th-oninvalid}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeprint,data-th-onbeforeprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onload,data-th-onload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragend,data-th-ondragend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadstart,data-th-onloadstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseover,data-th-onmouseover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplaythrough,data-th-oncanplaythrough}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpause,data-th-onpause}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onratechange,data-th-onratechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onhashchange,data-th-onhashchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstorage,data-th-onstorage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onemptied,data-th-onemptied}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadedmetadata,data-th-onloadedmetadata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onchange,data-th-onchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ononline,data-th-ononline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadeddata,data-th-onloadeddata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondurationchange,data-th-ondurationchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onprogress,data-th-onprogress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncontextmenu,data-th-oncontextmenu}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onvolumechange,data-th-onvolumechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstalled,data-th-onstalled}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeked,data-th-onseeked}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onunload,data-th-onunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onoffline,data-th-onoffline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeypress,data-th-onkeypress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onshow,data-th-onshow}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onclick,data-th-onclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousemove,data-th-onmousemove}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onended,data-th-onended}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousewheel,data-th-onmousewheel}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplay,data-th-oncanplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onselect,data-th-onselect}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onblur,data-th-onblur}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrag,data-th-ondrag}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:inline,data-th-inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineHTMLTagProcessor
+[THYMELEAF]             * [* {th:type,data-th-type}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:name,data-th-name}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:for,data-th-for}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rev,data-th-rev}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellpadding,data-th-cellpadding}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:optimum,data-th-optimum}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:start,data-th-start}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:lang,data-th-lang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:border,data-th-border}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scope,data-th-scope}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:summary,data-th-summary}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:placeholder,data-th-placeholder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:form,data-th-form}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:width,data-th-width}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contextmenu,data-th-contextmenu}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cite,data-th-cite}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rules,data-th-rules}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:axis,data-th-axis}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rel,data-th-rel}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:abbr,data-th-abbr}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:vspace,data-th-vspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:min,data-th-min}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hreflang,data-th-hreflang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginheight,data-th-marginheight}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:srclang,data-th-srclang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginwidth,data-th-marginwidth}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dir,data-th-dir}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:alt,data-th-alt}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:media,data-th-media}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contenteditable,data-th-contenteditable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:id,data-th-id}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:charset,data-th-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dropzone,data-th-dropzone}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:keytype,data-th-keytype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:headers,data-th-headers}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sandbox,data-th-sandbox}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:draggable,data-th-draggable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:valuetype,data-th-valuetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:icon,data-th-icon}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:maxlength,data-th-maxlength}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept,data-th-accept}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:low,data-th-low}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:wrap,data-th-wrap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codebase,data-th-codebase}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:classid,data-th-classid}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:span,data-th-span}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:compact,data-th-compact}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:datetime,data-th-datetime}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formmethod,data-th-formmethod}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:align,data-th-align}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:target,data-th-target}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:archive,data-th-archive}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:enctype,data-th-enctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:challenge,data-th-challenge}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:size,data-th-size}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:bgcolor,data-th-bgcolor}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellspacing,data-th-cellspacing}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept-charset,data-th-accept-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accesskey,data-th-accesskey}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hspace,data-th-hspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formaction,data-th-formaction}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:standby,data-th-standby}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rowspan,data-th-rowspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sizes,data-th-sizes}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:title,data-th-title}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:style,data-th-style}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scheme,data-th-scheme}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:content,data-th-content}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:step,data-th-step}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:class,data-th-class}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:radiogroup,data-th-radiogroup}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:height,data-th-height}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:pattern,data-th-pattern}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rows,data-th-rows}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:kind,data-th-kind}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formtarget,data-th-formtarget}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formenctype,data-th-formenctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:preload,data-th-preload}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codetype,data-th-codetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:poster,data-th-poster}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frameborder,data-th-frameborder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:longdesc,data-th-longdesc}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:label,data-th-label}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frame,data-th-frame}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:http-equiv,data-th-http-equiv}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scrolling,data-th-scrolling}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:background,data-th-background}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:data,data-th-data}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cols,data-th-cols}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:spellcheck,data-th-spellcheck}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:audio,data-th-audio}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:tabindex,data-th-tabindex}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:max,data-th-max}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:colspan,data-th-colspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:autocomplete,data-th-autocomplete}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:list,data-th-list}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:manifest,data-th-manifest}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:usemap,data-th-usemap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:high,data-th-high}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:xmlbase,data-th-xmlbase}] [1000]: org.thymeleaf.standard.processor.StandardXmlBaseTagProcessor
+[THYMELEAF]             * [* {th:xmllang,data-th-xmllang}] [1000]: org.thymeleaf.standard.processor.StandardXmlLangTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:xmlspace,data-th-xmlspace}] [1000]: org.thymeleaf.standard.processor.StandardXmlSpaceTagProcessor
+[THYMELEAF]             * [{option} *] [1005]: org.thymeleaf.spring6.processor.SpringOptionInSelectFieldTagProcessor
+[THYMELEAF]             * [* {th:value,data-th-value}] [1010]: org.thymeleaf.spring6.processor.SpringValueTagProcessor
+[THYMELEAF]             * [* {th:classappend,data-th-classappend}] [1100]: org.thymeleaf.standard.processor.StandardClassappendTagProcessor
+[THYMELEAF]             * [* {th:styleappend,data-th-styleappend}] [1100]: org.thymeleaf.standard.processor.StandardStyleappendTagProcessor
+[THYMELEAF]             * [* {th:text,data-th-text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext,data-th-utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment,data-th-fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert,data-th-assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove,data-th-remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:errors,data-th-errors}] [1700]: org.thymeleaf.spring6.processor.SpringErrorsTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputCheckboxFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputFileFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputGeneralFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputPasswordFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputRadioFieldTagProcessor
+[THYMELEAF]             * [{option} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringOptionFieldTagProcessor
+[THYMELEAF]             * [{select} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringSelectFieldTagProcessor
+[THYMELEAF]             * [{textarea} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringTextareaFieldTagProcessor
+[THYMELEAF]             * [* {th:uerrors,data-th-uerrors}] [1700]: org.thymeleaf.spring6.processor.SpringUErrorsTagProcessor
+[THYMELEAF]             * [* {th:errorclass,data-th-errorclass}] [1800]: org.thymeleaf.spring6.processor.SpringErrorClassTagProcessor
+[THYMELEAF]             * [* {th:ref,data-th-ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block,th-block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * DOCTYPE Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardTranslationDocTypeProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]             * [1100]: org.thymeleaf.standard.processor.StandardConditionalCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: XML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineXMLTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: TEXT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: JAVASCRIPT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: CSS
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Expression Objects:
+[THYMELEAF]         * #ctx
+[THYMELEAF]         * #root
+[THYMELEAF]         * #vars
+[THYMELEAF]         * #object
+[THYMELEAF]         * #locale
+[THYMELEAF]         * #conversions
+[THYMELEAF]         * #uris
+[THYMELEAF]         * #temporals
+[THYMELEAF]         * #calendars
+[THYMELEAF]         * #dates
+[THYMELEAF]         * #bools
+[THYMELEAF]         * #numbers
+[THYMELEAF]         * #objects
+[THYMELEAF]         * #strings
+[THYMELEAF]         * #arrays
+[THYMELEAF]         * #lists
+[THYMELEAF]         * #sets
+[THYMELEAF]         * #maps
+[THYMELEAF]         * #aggregates
+[THYMELEAF]         * #messages
+[THYMELEAF]         * #ids
+[THYMELEAF]         * #execInfo
+[THYMELEAF]         * #request
+[THYMELEAF]         * #response
+[THYMELEAF]         * #session
+[THYMELEAF]         * #servletContext
+[THYMELEAF]         * #fields
+[THYMELEAF]         * #themes
+[THYMELEAF]         * #mvc
+[THYMELEAF]         * #requestdatavalues
+[THYMELEAF]     * Execution Attributes:
+[THYMELEAF]         * "StandardExpressionParser": Standard Expression Parser
+[THYMELEAF]         * "StandardJavaScriptSerializer": org.thymeleaf.standard.serializer.StandardJavaScriptSerializer@2eec505f
+[THYMELEAF]         * "StandardCSSSerializer": org.thymeleaf.standard.serializer.StandardCSSSerializer@57fd3e81
+[THYMELEAF]         * "EnableSpringELCompiler": false
+[THYMELEAF]         * "StandardVariableExpressionEvaluator": SpringEL
+[THYMELEAF]         * "StandardConversionService": org.thymeleaf.spring6.expression.SpringStandardConversionService@78cbea0b
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2025-05-16T16:46:19.823+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2025-05-16T16:46:19.930+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:46:31.425+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/tasks/new", parameters={masked}
+2025-05-16T16:46:31.428+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#saveTask(Task)
+2025-05-16T16:46:31.517+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-4] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2025-05-16T16:46:31.518+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2025-05-16T16:46:31.522+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/tasks", parameters={}
+2025-05-16T16:46:31.522+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:46:31.537+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:46:31.538+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:46:32.002+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:46:32.004+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:46:32.008+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:46:32.063+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:46:49.760+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/tasks/new", parameters={masked}
+2025-05-16T16:46:49.763+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#saveTask(Task)
+2025-05-16T16:46:49.796+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2025-05-16T16:46:49.797+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2025-05-16T16:46:49.801+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/tasks", parameters={}
+2025-05-16T16:46:49.802+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:46:49.838+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:46:49.841+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:46:50.006+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:46:50.006+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:46:50.008+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:46:50.030+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:47:02.490+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/tasks/new", parameters={masked}
+2025-05-16T16:47:02.492+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#saveTask(Task)
+2025-05-16T16:47:02.534+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-2] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2025-05-16T16:47:02.536+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2025-05-16T16:47:02.544+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/tasks", parameters={}
+2025-05-16T16:47:02.544+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:47:02.551+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:47:02.552+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:47:02.702+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:47:02.703+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:47:02.707+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:47:02.728+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:47:22.658+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/tasks/new", parameters={masked}
+2025-05-16T16:47:22.660+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#saveTask(Task)
+2025-05-16T16:47:22.687+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-6] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2025-05-16T16:47:22.688+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2025-05-16T16:47:22.691+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/tasks", parameters={}
+2025-05-16T16:47:22.692+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:47:22.699+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:47:22.700+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:47:22.861+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:47:22.862+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:47:22.866+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:47:22.886+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:47:27.424+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/tasks/toggle/2", parameters={masked}
+2025-05-16T16:47:27.440+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#toggleTaskCompletion(Long)
+2025-05-16T16:47:27.488+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-10] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2025-05-16T16:47:27.489+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2025-05-16T16:47:27.496+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/tasks", parameters={}
+2025-05-16T16:47:27.496+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:47:27.510+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:47:27.511+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:47:27.559+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:47:27.560+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:47:27.561+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:47:27.569+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:47:29.779+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/tasks/toggle/3", parameters={masked}
+2025-05-16T16:47:29.780+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#toggleTaskCompletion(Long)
+2025-05-16T16:47:29.784+03:00  INFO 53894 --- [taskManagerLast] [http-nio-8080-exec-2] c.example.taskManagerLast.TaskService    : ÖNEMLİ GÖREV DURUM DEĞİŞTİRDİ: 3 -> Tamamlandı
+2025-05-16T16:47:29.785+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-2] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2025-05-16T16:47:29.785+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2025-05-16T16:47:29.788+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/tasks", parameters={}
+2025-05-16T16:47:29.789+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:47:29.801+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:47:29.802+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:47:30.179+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:47:30.180+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:47:30.187+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:47:30.202+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:47:32.395+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/tasks/toggle/3", parameters={masked}
+2025-05-16T16:47:32.397+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#toggleTaskCompletion(Long)
+2025-05-16T16:47:32.405+03:00  INFO 53894 --- [taskManagerLast] [http-nio-8080-exec-6] c.example.taskManagerLast.TaskService    : ÖNEMLİ GÖREV DURUM DEĞİŞTİRDİ: 3 -> Beklemede
+2025-05-16T16:47:32.406+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-6] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2025-05-16T16:47:32.406+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2025-05-16T16:47:32.415+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/tasks", parameters={}
+2025-05-16T16:47:32.416+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:47:32.424+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:47:32.425+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:47:32.504+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:47:32.504+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:47:32.506+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:47:32.520+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:47:34.269+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/tasks/toggle/1", parameters={masked}
+2025-05-16T16:47:34.272+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#toggleTaskCompletion(Long)
+2025-05-16T16:47:34.281+03:00  INFO 53894 --- [taskManagerLast] [http-nio-8080-exec-9] c.example.taskManagerLast.TaskService    : ÖNEMLİ GÖREV DURUM DEĞİŞTİRDİ: 1 -> Tamamlandı
+2025-05-16T16:47:34.283+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2025-05-16T16:47:34.284+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2025-05-16T16:47:34.287+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/tasks", parameters={}
+2025-05-16T16:47:34.287+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.taskManagerLast.TaskController#getAllTasks(YearMonth, Model)
+2025-05-16T16:47:34.294+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] o.s.web.client.RestTemplate              : HTTP GET https://api.openweathermap.org/data/2.5/weather?q=Sivas&appid=d0bfaf4e92019f4d64ddcdd99f5782f2&units=metric&lang=tr
+2025-05-16T16:47:34.295+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-16T16:47:34.346+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-16T16:47:34.347+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] o.s.web.client.RestTemplate              : Reading to [com.example.taskManagerLast.WeatherResponse]
+2025-05-16T16:47:34.356+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-05-16T16:47:34.369+03:00 DEBUG 53894 --- [taskManagerLast] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-16T16:49:04.507+03:00  INFO 53894 --- [taskManagerLast] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T16:49:04.527+03:00  INFO 53894 --- [taskManagerLast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T16:49:04.540+03:00  INFO 53894 --- [taskManagerLast] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T16:49:04.555+03:00  INFO 53894 --- [taskManagerLast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-16T16:49:04.560+03:00  INFO 53894 --- [taskManagerLast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-16T16:49:09.178+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : Starting TaskManagerLastApplication using Java 23.0.2 with PID 53999 (/Users/ahmetyusufbursal/Desktop/TaskManager Proje/target/classes started by ahmetyusufbursal in /Users/ahmetyusufbursal/Desktop/TaskManager Proje)
+2025-05-16T16:49:09.179+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T16:49:09.201+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-16T16:49:09.201+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-16T16:49:09.435+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T16:49:09.459+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2025-05-16T16:49:09.672+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-16T16:49:09.680+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T16:49:09.680+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T16:49:09.698+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T16:49:09.698+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 497 ms
+2025-05-16T16:49:09.761+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T16:49:09.787+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T16:49:09.799+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T16:49:09.905+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T16:49:09.915+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-16T16:49:10.089+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/mydatabase user=SA
+2025-05-16T16:49:10.090+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-16T16:49:10.101+03:00  WARN 53999 --- [taskManagerLast] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-16T16:49:10.110+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T16:49:10.405+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T16:49:10.421+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T16:49:10.580+03:00  WARN 53999 --- [taskManagerLast] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T16:49:10.617+03:00 DEBUG 53999 --- [taskManagerLast] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2025-05-16T16:49:10.652+03:00 DEBUG 53999 --- [taskManagerLast] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-16T16:49:10.665+03:00 DEBUG 53999 --- [taskManagerLast] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-16T16:49:10.683+03:00 DEBUG 53999 --- [taskManagerLast] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-16T16:49:10.693+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/mydatabase'
+2025-05-16T16:49:10.716+03:00  WARN 53999 --- [taskManagerLast] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-16T16:49:10.730+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-16T16:49:10.736+03:00  INFO 53999 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : Started TaskManagerLastApplication in 1.729 seconds (process running for 1.895)
+2025-05-16T16:49:12.957+03:00  INFO 53999 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : HATIRLATMA GÖNDERİLDİ - Görev ID: 4
+2025-05-16T16:52:32.076+03:00  INFO 53999 --- [taskManagerLast] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T16:52:32.094+03:00  INFO 53999 --- [taskManagerLast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T16:52:32.100+03:00  INFO 53999 --- [taskManagerLast] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T16:52:32.108+03:00  INFO 53999 --- [taskManagerLast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-16T16:52:32.113+03:00  INFO 53999 --- [taskManagerLast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-16T16:52:39.043+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : Starting TaskManagerLastApplication using Java 23.0.2 with PID 54073 (/Users/ahmetyusufbursal/Desktop/TaskManager Proje/target/classes started by ahmetyusufbursal in /Users/ahmetyusufbursal/Desktop/TaskManager Proje)
+2025-05-16T16:52:39.044+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T16:52:39.066+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-16T16:52:39.066+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-16T16:52:39.297+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T16:52:39.321+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2025-05-16T16:52:39.528+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-16T16:52:39.536+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T16:52:39.536+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T16:52:39.554+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T16:52:39.554+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 488 ms
+2025-05-16T16:52:39.621+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T16:52:39.646+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T16:52:39.658+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T16:52:39.765+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T16:52:39.775+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-16T16:52:39.935+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/mydatabase user=SA
+2025-05-16T16:52:39.936+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-16T16:52:39.947+03:00  WARN 54073 --- [taskManagerLast] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-16T16:52:39.955+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T16:52:40.251+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T16:52:40.269+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T16:52:40.426+03:00  WARN 54073 --- [taskManagerLast] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T16:52:40.462+03:00 DEBUG 54073 --- [taskManagerLast] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2025-05-16T16:52:40.497+03:00 DEBUG 54073 --- [taskManagerLast] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-16T16:52:40.509+03:00 DEBUG 54073 --- [taskManagerLast] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-16T16:52:40.528+03:00 DEBUG 54073 --- [taskManagerLast] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-16T16:52:40.537+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/mydatabase'
+2025-05-16T16:52:40.560+03:00  WARN 54073 --- [taskManagerLast] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-16T16:52:40.574+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-16T16:52:40.579+03:00  INFO 54073 --- [taskManagerLast] [restartedMain] c.e.t.TaskManagerLastApplication         : Started TaskManagerLastApplication in 1.703 seconds (process running for 1.867)
+2025-05-16T16:52:42.960+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : HATIRLATMA GÖNDERİLDİ - Görev ID: 4
+2025-05-16T16:52:46.098+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : GÜNLÜK RAPOR GÖNDERİLDİ
+2025-05-16T16:52:48.151+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : HAFTALIK RAPOR GÖNDERİLDİ
+2025-05-16T16:52:50.664+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : HATIRLATMA GÖNDERİLDİ - Görev ID: 4
+2025-05-16T16:52:53.322+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : GÜNLÜK RAPOR GÖNDERİLDİ
+2025-05-16T16:52:55.715+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : HAFTALIK RAPOR GÖNDERİLDİ
+2025-05-16T16:52:57.745+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : HATIRLATMA GÖNDERİLDİ - Görev ID: 4
+2025-05-16T16:52:59.716+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : GÜNLÜK RAPOR GÖNDERİLDİ
+2025-05-16T16:53:01.742+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : HAFTALIK RAPOR GÖNDERİLDİ
+2025-05-16T16:53:04.051+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : HATIRLATMA GÖNDERİLDİ - Görev ID: 4
+2025-05-16T16:53:06.527+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : GÜNLÜK RAPOR GÖNDERİLDİ
+2025-05-16T16:53:08.272+03:00  INFO 54073 --- [taskManagerLast] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T16:53:08.285+03:00  INFO 54073 --- [taskManagerLast] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T16:53:09.570+03:00  INFO 54073 --- [taskManagerLast] [scheduling-1] c.e.taskManagerLast.SchedulerConfig      : HAFTALIK RAPOR GÖNDERİLDİ
+2025-05-16T16:53:09.571+03:00  INFO 54073 --- [taskManagerLast] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T16:53:09.575+03:00  INFO 54073 --- [taskManagerLast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-16T16:53:09.576+03:00  INFO 54073 --- [taskManagerLast] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

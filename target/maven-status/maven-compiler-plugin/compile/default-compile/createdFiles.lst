@@ -1,0 +1,12 @@
+com\example\taskManagerLast\WeatherResponse.class
+com\example\taskManagerLast\TaskService.class
+com\example\taskManagerLast\SchedulerConfig.class
+com\example\taskManagerLast\Task.class
+com\example\taskManagerLast\TaskController.class
+com\example\taskManagerLast\TaskRepository.class
+com\example\taskManagerLast\TaskManagerLastApplication.class
+com\example\taskManagerLast\WeatherResponse$Main.class
+com\example\taskManagerLast\EmailService$EmailException.class
+com\example\taskManagerLast\EmailService.class
+com\example\taskManagerLast\PdfReportService.class
+com\example\taskManagerLast\WeatherResponse$Weather.class
